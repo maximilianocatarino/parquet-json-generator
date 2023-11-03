@@ -2,14 +2,17 @@
 Generate Apache Parquet files based on JSON schema.
 
 # Schema Description
+```
 tableName: Parquet file name
 Schema: column schema collection
 Schema.columnName: name of the column
 Schema.type: type of the column. [Check the valid types for DuckDB here.](https://duckdb.org/docs/sql/data_types/overview). 
 Schema.key: define column as primary key
 Schema..nullable: allow/deny null value for the column. Default, allow null values.
+```
 
 # Schema Example
+```
 {
     "tableName": "cloud_provider",
     "schema": [
@@ -23,3 +26,4 @@ Schema..nullable: allow/deny null value for the column. Default, allow null valu
         {"id": 3, "description": "Microsoft Azure", "created_at": "to_timestamp(1695406053139)"}
     ]
 }
+```
