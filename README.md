@@ -10,7 +10,6 @@ Schema.key: define column as primary key
 Schema..nullable: allow/deny null value for the column. Default, allow null values.
 
 # Schema Example
-´´´
 {
     "tableName": "cloud_provider",
     "schema": [
@@ -24,4 +23,3 @@ Schema..nullable: allow/deny null value for the column. Default, allow null valu
         {"id": 3, "description": "Microsoft Azure", "created_at": "to_timestamp(1695406053139)"}
     ]
 }
-´´´
